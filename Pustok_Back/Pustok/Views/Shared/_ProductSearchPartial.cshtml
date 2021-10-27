@@ -1,0 +1,5 @@
+﻿@model IEnumerable<Product>
+@foreach (Product product in Model)
+{
+    <li  class="list-group-item" >@product.Title @product.Author.Name @product.Genre.Name</li>
+}
